@@ -242,7 +242,7 @@ angular.module('mdColorPicker', [])
 					$scope.setValue();
 				};
 				$scope.previewKeyDown = function( $event ) {
-					console.log( $event, $scope.ok );
+
 					if ( $event.keyCode == 13 ) {
 						$scope.ok && $scope.ok();
 					}
@@ -278,9 +278,9 @@ angular.module('mdColorPicker', [])
 				});
 
 				$scope.$watch( 'type', function() {
-					resultSpan.removeClass('switch');
+					resultSpan.removeClass('md-color-picker-switch');
 					$timeout(function() {
-						resultSpan.addClass('switch');
+						resultSpan.addClass('md-color-picker-switch');
 					});
 				});
 
@@ -312,7 +312,7 @@ angular.module('mdColorPicker', [])
 
 			}],
 			link: function( $scope, $element, $attrs ) {
-				console.log("hue");
+
 				////////////////////////////
 				// Variables
 				////////////////////////////

@@ -277,9 +277,9 @@ angular.module('mdColorPicker', [])
 				});
 
 				$scope.$watch( 'type', function() {
-					resultSpan.removeClass('switch');
+					resultSpan.removeClass('md-color-picker-switch');
 					$timeout(function() {
-						resultSpan.addClass('switch');
+						resultSpan.addClass('md-color-picker-switch');
 					});
 				});
 
